@@ -11,18 +11,9 @@
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active">
-					{{!-- <a href="#">Link <span class="sr-only">(current)</span></a> --}}
-					{{#link-to 'index'}}Home{{/link-to}}
-				</li>
-				<li>
-					{{!-- <a href="#">Link</a> --}}
-					{{#link-to 'about'}}About{{/link-to}}
-				</li>
-				<li>
-					{{!-- <a href="#">Link</a> --}}
-					{{#link-to 'contact'}}Contact{{/link-to}}
-				</li>
+				{{nav-bar-link linkRoute='index' linkText='Home' isActive=false}}
+				{{nav-bar-link linkRoute='about' linkText='About' isActive=false}}
+				{{nav-bar-link linkRoute='contact' linkText='Contact' isActive=false}}
 			</ul>
 		</div>
 	</div>
