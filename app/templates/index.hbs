@@ -2,12 +2,8 @@
 
 <p>Out of all the rental services out there, you will find that we are the best rental service ever. This paragraph explains why we are the best rental service ever. In conclusion, we are the best rental service ever.</p>
 
-{{#each model as |rental|}}
-	<h2>{{rental.title}}</h2>
-	<p>Owner: {{rental.owner}}</p>
-	<p>Type: {{rental.type}}</p>
-	<p>Location: {{rental.city}}</p>
-	<p>Number of bedrooms: {{rental.bedrooms}}</p>
+{{#each model as |rentalUnit|}}
+	{{rental-listing rental=rentalUnit}}
 {{/each}}
 
 {{outlet}}
